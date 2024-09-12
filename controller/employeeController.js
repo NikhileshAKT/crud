@@ -31,7 +31,7 @@ const createemployee = async (req, res) => {
         gender: req.body.gender,
         mobile: req.body.mobile,
       })
-  
+
       res.status(201).json({
         status: true,
         message: "Profile created successfully",
@@ -131,6 +131,7 @@ const createemployee = async (req, res) => {
           }, {
             where: { id: id }
           });
+          
       
           res.status(200).json({
             status: true,
